@@ -1,0 +1,2 @@
+# FundFlow utilise uniquement la bibliothèque standard Python.
+# Ce fichier reste présent pour que Nixpacks détecte explicitement Python.

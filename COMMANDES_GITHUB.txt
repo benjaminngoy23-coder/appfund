@@ -1,0 +1,33 @@
+ETAPES POUR METTRE FUNDFLOW SUR GITHUB
+
+1) Crée un dépôt sur GitHub
+- Va sur https://github.com
+- Clique sur New repository
+- Nom du dépôt : fundflow
+- Choisis Public ou Private
+- Ne coche pas README, .gitignore ou License
+- Clique sur Create repository
+
+2) Ouvre CMD ou PowerShell dans le dossier FundFlow_GitHub_READY
+
+3) Copie ces commandes une par une :
+
+git init
+git add .
+git commit -m "Première version de FundFlow"
+git branch -M main
+git remote add origin https://github.com/TON-NOM-UTILISATEUR/fundflow.git
+git push -u origin main
+
+4) Remplace TON-NOM-UTILISATEUR par ton nom GitHub.
+
+Exemple :
+git remote add origin https://github.com/benjaminngoy/fundflow.git
+
+SI GITHUB DEMANDE UN MOT DE PASSE :
+GitHub n'accepte plus le mot de passe normal dans Git. Il faut utiliser un Personal Access Token.
+
+IMPORTANT :
+Après mise en ligne, connecte-toi avec :
+admin@fundflow.local / admin123
+Puis change le mot de passe administrateur.

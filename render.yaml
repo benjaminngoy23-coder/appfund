@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: fundflow
+    runtime: python
+    buildCommand: python -m pip install -r requirements.txt && python -m py_compile app.py main.py
+    startCommand: python main.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12
+      - key: DATA_DIR
+        value: /tmp/fundflow_data
+      - key: SEED_DEMO_USERS
+        value: "false"
